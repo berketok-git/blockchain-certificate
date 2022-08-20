@@ -1,0 +1,374 @@
+{
+  "abi":[
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "state",
+          "type": "bool"
+        }
+      ],
+      "name": "changeCertificateStatus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "state",
+          "type": "bool"
+        }
+      ],
+      "name": "changeCertificateTypeStatus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "institutename",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "certificatetype",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "additional_key",
+          "type": "string"
+        }
+      ],
+      "name": "createCertificate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "ownerAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "ownerName",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "certificatetypeid",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "additionalValue",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct CWCert.IssueCertificateTemplate[]",
+          "name": "certificateTemplate",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "issueCertificate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "organizationWallet",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "state",
+          "type": "bool"
+        }
+      ],
+      "name": "updateInstuteWallet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "organizationWallet",
+          "type": "address"
+        }
+      ],
+      "name": "checkRegistrationStatusWallet",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "organizationAddress",
+          "type": "address"
+        }
+      ],
+      "name": "checkTemplatesOfInstute",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "ownerAddres",
+          "type": "address"
+        }
+      ],
+      "name": "getAddressCertificates",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "owner_address",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "owner_name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "certificate_id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "certificate_type_id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "creation_date",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "_institute_address",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "_institute_name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_certificate_type",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_additional_fields_key",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_additional_fields_value",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct CWCert.Certificate[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "certificateNumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "getCertificateInfo",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "owner_address",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "owner_name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "certificate_id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "certificate_type_id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "creation_date",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "_institute_address",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "_institute_name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_certificate_type",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_additional_fields_key",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_additional_fields_value",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct CWCert.Certificate",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getMyCertificates",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "owner_address",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "owner_name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "certificate_id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "certificate_type_id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "creation_date",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "_institute_address",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "_institute_name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_certificate_type",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_additional_fields_key",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "_additional_fields_value",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct CWCert.Certificate[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
