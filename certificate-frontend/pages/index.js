@@ -8,9 +8,6 @@ export default function Home() {
       </Button>
       <br />
       <br />
-      <Button href="/issue" variant="contained">
-        Issue Certificate
-      </Button>
       <br />
       <br />
       <Button href="/view" variant="contained">

@@ -25,10 +25,10 @@ export default function Create() {
       let chainId = await ethereum.request({ method: "eth_chainId" });
       console.log("Connected to chain:" + chainId);
 
-      const rinkebyChainId = "0x4";
+      const rinkebyChainId = "0xaa36a7";
 
       if (chainId !== rinkebyChainId) {
-        alert("You are not connected to the Rinkeby Testnet!");
+        alert("You are not connected to the Sepolia Testnet!");
         return;
       } else {
         setCorrectNetwork(true);
